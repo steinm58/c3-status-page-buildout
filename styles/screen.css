@@ -1,50 +1,107 @@
-body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
+header {
+    background: #121D29;
+    padding: 10px;
+    color: #cccccc;
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
+.header {
     display: flex;
-    justify-content: space-evenly;
-    margin: 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    padding-right: 20px;
+}
+
+body {
+    font-family: "Lucida Console", Courier, monospace;
+    background: #080808;
+    color: #cccccc;
     padding: 0;
-}
-
-nav ul li {
-    list-style-type: none;
     margin: 0;
-}
-
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
 }
 
 h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+    font-size: 36px;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.about {
+    width: 100%;
 }
 
-img.about {
-    opacity: 0.5;
+.about-title {
+    color: #FFA500;
+    font-size: 32px;
+    text-align: center;
+}
+
+.main {
+    padding-top: 40px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 300px;
+    gap: 35px;
+}
+
+.option {
+    margin: auto;
+    text-align: center;
+}
+
+.large {
+    width: 220px;
+    height: 220px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.medium {
+    width: 180px;
+    height: 180px;
+    padding-top: 40px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.small {
+    width: 150px;
+    height: 150px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.satellite {
+    height: 260px;
+    background: #121D29;
+    border-color: #121D29;
+    border-radius: 10px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+
+.satellite:hover {
+    border-style: solid;
+    border-color: #121D29;
+    box-shadow: 0 0 20px #FFA500;
+    border-radius: 10px;
+}
+
+.about-info {
+    font-size: 28px;
 }

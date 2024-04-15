@@ -1,5 +1,5 @@
 ---
-title: 11ty Boilerplate
+title: Status Page Buildout
 ---
 
 <!DOCTYPE html>
@@ -10,13 +10,58 @@ title: 11ty Boilerplate
   <title>{{ title }}</title>
   <link rel="stylesheet" href="/styles/screen.css">
 </head>
+<header>
+  <div class="header">
+    <a href="/"><img class="logo" src="/images/logo.png"></a>
+    <h1>Active Experiments</h1>
+  </div>
+</header>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
-    </ul>
-  </nav>
+<div class="main">
+    <div class="projects">
+        <div class="option">
+          <a href="/svg">
+            <div class="satellite">
+                <img class="medium" src="/images/satellite.png">
+            </div> </a>
+            <p class="name">SVG</p>
+        </div>
+        <div class="option">
+          <a href="/irr">
+            <div class="satellite">
+                <img class="large" src="/images/satellite.png">
+            </div> </a>
+            <p class="name">IRR</p>
+        </div>
+        <div class="option">
+          <a href="/cwr">
+            <div class="satellite">
+                <img class="small" src="/images/satellite.png">
+            </div> </a>
+            <p class="name">CWR</p>
+        </div>
+        <div class="option">
+          <a href="/lsl">
+            <div class="satellite">
+                <img class="large" src="/images/satellite.png">
+            </div> </a>
+            <p class="name">LSL</p>
+        </div>
+        <div class="option">
+          <a href="/spr">
+            <div class="satellite">
+                <img class="small" src="/images/satellite.png">
+            </div> </a>
+            <p class="name">SPR</p>
+        </div>
+        <div class="option">
+          <a href="/aex">
+            <div class="satellite">
+                <img class="medium" src="/images/satellite.png">
+            </div> </a>
+            <p class="name">AEX</p>
+        </div>
+    </div>
     {{ content }}
 </body>
 </html>
